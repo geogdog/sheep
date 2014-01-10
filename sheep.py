@@ -18,6 +18,7 @@
 # limitations under the License.
 import os
 
+
 def sheep(dirs):
     binaries = []
     for dir in dirs:

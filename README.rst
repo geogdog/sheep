@@ -2,6 +2,22 @@
 Sheep
 =====
 
+::
+
+                     _,._
+                 __.'   _)
+                <_,)'.-"a\
+                  /' (    \
+      _.-----..,-'   (`"--^
+     //              |
+    (|   `;      ,   |
+      \   ;.----/  ,/
+       ) // /   | |\ \
+       \ \\`\   | |/ /
+        \ \\ \  | |\/
+         `" `"  `"`
+
+
 If your colleague leaves his computer unlocked you can use this script to
 really upset them.
 
